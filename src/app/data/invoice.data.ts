@@ -1,39 +1,41 @@
+import { Invoice } from "../models/invoice";
 
-export const invoiceData = {
+export const invoiceData: any = {
+
   id: 1,
-  name: "Componente de PC",
+  name: 'Componentes de PC',
   client: {
-    name: "Andres",
-    lastName: "Milano",
+    name: 'Andres',
+    lastname: 'Milano',
     address: {
-      country: "Canada",
-      city: "Calgary",
-      street: "Byron street",
+      country: 'Canada',
+      city: 'Calgary',
+      street: 'One Street',
       number: 15,
+    }
+  },
+  company: {
+    name: 'New Age',
+    fiscalNumber: 3123123,
+  },
+  items: [
+    {
+      id: 1,
+      product: 'Cpu Intel i9',
+      price: 599,
+      quantity: 1
     },
-    company: {
-      name: 'new age',
-      fiscalNumber: 123456
+    {
+      id: 2,
+      product: 'Corsair Teclado Mecanico',
+      price: 399,
+      quantity: 2
     },
-    items: [
-      {
-        id:1,
-        product:'CPU intel 7',
-        price: 500,
-        quantity: 15
-      },
-      {
-        id:2,
-        product:'AMD Ryzen 7',
-        price: 799,
-        quantity: 20
-      },
-      {
-        id:3,
-        product:'AMD radeon ',
-        price: 699,
-        quantity: 10
-      }
-    ]
-  }
+    {
+      id: 3,
+      product: 'Monitor Asus',
+      price: 899,
+      quantity: 3
+    },
+  ]
 }
